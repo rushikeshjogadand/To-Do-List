@@ -107,53 +107,7 @@
           <td id="mark">${item.mark}</td>
           <td id="mobile">${item.number}</td>
           <td>
-            <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#register"  onclick="UpdateData(${index})"> Update </button>
-            <div class="modal fade" id="register">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <h5 class="text-center">Update ToDo List</h5>
-                  <div class="modal-body">
-                  <form>
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>Roll No</td>
-                          <td><input type="number"  class="form-control" id="txtid" ></td>
-                         </tr>
-                        <tr>
-                          <td>First Name</td>
-                          <td><input type="text" class="form-control" id="txtName" name="firstName"></td>
-                        </tr>
-                        <tr>
-                          <td>Last Name</td>
-                          <td><input type="text" class="form-control" id="txtLast" name="lastName"></td>
-                        </tr>
-
-                        <tr>
-                          <td>City</td>
-                          <td><input type="text" class="form-control" id="txtCity" name="city"></td>
-                        </tr>
-
-                        <tr>
-                          <td>Marks</td>
-                          <td><input type="number" class="form-control" id="txtMark" name="marks"></td>
-                        </tr>
-
-                        <tr>
-                          <td>Mobile</td>
-                          <td><input type="number" class="form-control" id="txtNo" name="mobile"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-info" onclick="add()" data-bs-dismiss="modal">Submit</button>
-                    <button class="btn btn-success" data-bs-dismiss="modal">Cancel</button>
-                </div>
-              </div>
-            </div>
-           </div>
+            <button class="btn btn-primary"  onclick="UpdateData(${index})"> Update </button>
             <button class="bg-danger btn btn-danger" onclick="DeleteData()">Delete</button>
           </td>
       </tr> `
